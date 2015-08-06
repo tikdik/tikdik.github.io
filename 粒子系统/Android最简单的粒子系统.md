@@ -10,7 +10,7 @@ https://github.com/plattysoft/Leonids
 
 ParticleSystem是一个具有Emittor发射器概念的管理者，管理着粒子Particle的初始化ParticleInitializer，粒子的发射后的运行状态ParticleModifier，及粒子的显示ParticleField。
 
-![image](http://github.com/tikdik/tikdik.github.io/blob/master/%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/images/Leonids_class.PNG)
+![image](https://github.com/tikdik/tikdik.github.io/blob/master/%E7%B2%92%E5%AD%90%E7%B3%BB%E7%BB%9F/images/Leonids_class.PNG)
 
 ##ParticleField用户看到的粒子区域
 ###每个粒子是一个View
