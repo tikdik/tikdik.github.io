@@ -1,4 +1,7 @@
 #Intent意图系统
+
+记录怎么使用，其思想请参考http://blog.csdn.net/21cnbao/article/details/7917652
+
 ##explicit(明确) intent
 
 	Intent intent= new Intent(this, MyActivity.class)； 
