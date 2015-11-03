@@ -21,7 +21,7 @@
 
 ###category
 
-action是比较大到范围， 需要细化分类， 只有分类intent-filter包含了请求intent里面到category，这个组件才能接收。
+action是比较大到范围， 需要细化分类。只有intent-filter包含了请求intent里面的category，这个组件才能接收。
 
 如果intent仅仅包含了action,android默认会加入android.intent.category.DEFAULT，所以如果组件需要接收某种action，必须加上android.intent.category.DEFAULT，但有种会例外，就是
 
