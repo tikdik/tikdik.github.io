@@ -13,7 +13,7 @@
 
 ##implicit(隐藏) intent
 
-需要进行三个匹配，一个是action，一个是category，一个是data
+需要正对每个动作action的某类category,有时还仅仅针对某种数据data
 
 ###action
 
