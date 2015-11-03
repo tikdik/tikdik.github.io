@@ -31,13 +31,23 @@ action是比较大到范围， 需要细化分类， 只有分类intent-filter�
     </intent-filter> 
 
 ###data
+当有data时，需要至少匹配其中一种data数据，同时针对该action,同时是里面的一种类别category
+比如
+    
+    <intent-filter >
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="image/*"/>
+    </intent-filter>
 
-通过Uri来标识
+这时可用如下代码启动，里面需要针对这个action，同时针对了android.intent.category.DEFAULT类
 
-	Uri uri = Uri.parse("tel:13888888888");
-	intent.setAction(Intent.ACTION_VIEW);
-	intent.setData(uri);
-	startActivity(intent);
+    Intent intent = new Intent(Intent.ACTION_VIEW);
+    intent.setDataAndType(Uri.fromFile(new File("/sdcard/DCIM/P51101-170827.jpg")), "image/*");
+    startActivity(intent);
+
+
 
 ####scheme
 
@@ -48,6 +58,13 @@ scheme://host:port/path or pathPrefix or pathPattern
 多用途互联网邮件扩展（MIME，Multipurpose Internet Mail Extensions）是一个互联网标准，它扩展了电子邮件标准，使其能够支持非ASCII字符、二进制格式附件等多种格式的邮件消息。
 
 说白了就是处理文件格式，具体支持哪些参考这个标准
+
+通过Uri来标识
+
+    Uri uri = Uri.parse("tel:13888888888");
+    intent.setAction(Intent.ACTION_VIEW);
+    intent.setData(uri);
+    startActivity(intent);
 
 示例：
 
