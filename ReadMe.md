@@ -1,6 +1,5 @@
 #我的地盘
-在线编辑
-![]({{site.baseurl}}//app_picks.png)
+在线编辑![]({{site.baseurl}}/images/app_picks.png)
 ----
 ##装备
 ###压缩优化
